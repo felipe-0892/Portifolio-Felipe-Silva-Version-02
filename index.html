@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe Silva Costa | Desenvolvedor Full Stack</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav id="navbar" class="navbar navbar-expand-md py-0">
+        <div class="container" style="height:64px">
+            <a class="brand-name" href="#home"><i class="bi bi-code"></i> Felipe Silva Costa</a>
+
+            <div class="d-flex d-md-none align-items-center gap-2">
+                <button id="theme-toggle-mob"><i class="bi bi-sun"></i></button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-md-center gap-md-3 py-3 py-md-0">
+                    <li class="nav-item"><button class="nav-link-custom"
+                            onclick="scrollToSection('home')">Início</button></li>
+                    <li class="nav-item"><button class="nav-link-custom"
+                            onclick="scrollToSection('about')">Sobre</button></li>
+                    <li class="nav-item"><button class="nav-link-custom"
+                            onclick="scrollToSection('skills')">Habilidades</button></li>
+                    <li class="nav-item"><button class="nav-link-custom"
+                            onclick="scrollToSection('projects')">Projetos</button></li>
+                    <li class="nav-item"><button class="nav-link-custom"
+                            onclick="scrollToSection('contact')">Contato</button>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <button id="theme-toggle"><i class="bi bi-sun"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="home">
+        <div class="hero-gradient"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-in-left">
+                    <h1 class="hero-title mb-3">
+                        Olá, sou desenvolvedor<br>
+                        <span class="gradient-text">Full Stack</span>
+                    </h1>
+                    <!-- <h2 class="hero-subtitle mb-4">Desenvolvedor Full Stack</h2> -->
+                    <p class="typed-text mb-5">
+                        <span id="typed"></span><span class="cursor">|</span>
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <button class="btn-gradient" onclick="scrollToSection('projects')">
+                            <i class="bi bi-grid-3x3-gap me-2"></i>Ver Projetos
+                        </button>
+                        <a href="/assets/FelipeSilva-Desenvolvedor-Curriculo.pdf" target="_blank" class="btn-outline-custom" download>
+                            <i class="bi bi-download me-2"></i>Baixar CV
+                        </a>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/felipe-0892" target="_blank" class="social-btn"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/felipe-silva-costa/" target="_blank"
+                            class="social-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:felipesilvacosta892@gmail.com" class="social-btn"><i
+                                class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 fade-in-right">
+                    <div class="profile-wrapper">
+                        <div class="profile-glow"></div>
+                        <img src="/img/me.png" alt="Felipe Silva Costa" class="profile-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chevron-down"><i class="bi bi-chevron-down"></i></div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about" class="section-alt">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <h2 class="section-title">Sobre <span class="accent">Mim</span></h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 fade-in-left">
+                    <p class="about-text mb-4">
+                        Desenvolvedor Full Stack em formação, cursando o 4º período de Sistemas para Internet, com
+                        foco na criação de soluções web modernas, organizadas e eficientes.
+                        Possuo experiência com HTML, CSS, JavaScript, PHP, MySQL, PostgreSQL, além de Bootstrap 5 e
+                        React.js,
+                        atuando tanto no Front-end quanto no Back-end, com maior afinidade por desenvolvimento de
+                        interfaces e experiência do usuário.
+                        Busco constantemente aplicar boas práticas, organização de código e fundamentos de
+                        arquitetura em projetos reais, sempre com foco em qualidade, evolução técnica e geração de
+                        valor.
+
+                    </p>
+                    <p class="about-text mb-5">
+                        Especializado em desenvolvimento web moderno, trabalho com as mais recentes tecnologias para
+                        entregar produtos de alta qualidade que excedem as expectativas dos clientes. Meu foco é
+                        criar soluções inovadoras, eficientes e escaláveis, sempre com atenção aos detalhes e às
+                        necessidades dos usuários finais.
+                    </p>
+
+                    <div class="info-card mb-4">
+                        <h3><i class="bi bi-mortarboard me-2 text-primary"></i>Formação</h3>
+                        <div>
+                            <p class="mb-1" style="color:var(--text-secondary); font-weight:600;">FANESE</p>
+                            <p class="mb-1" style="color:var(--text-muted); font-size:.875rem;">Faculdade de
+                                Administração e Negócios de Sergipe</p>
+                            <small style="color:var(--text-muted);">Tecnologia com foco em desenvolvimento de sistemas ·
+                                2024–2027</small>
+                        </div>
+                        <hr class="divider-line my-3">
+                        <div>
+                            <p class="mb-1" style="color:var(--text-secondary); font-weight:600;">IFS — Instituto
+                                Federal de Sergipe</p>
+                            <p class="mb-1" style="color:var(--text-muted); font-size:.875rem;">Técnico em Informática · 2022–2024
+                            </p>
+                            <small style="color:var(--text-muted);"></small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="bi bi-person-check me-2 text-primary"></i>Soft Skills</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="project-tag">Autodidata</span>
+                            <span class="project-tag">Proativo</span>
+                            <span class="project-tag">Trabalho em equipe</span>
+                            <span class="project-tag">Inteligência interpessoal</span>
+                            <span class="project-tag">Comunicação efetiva</span>
+                            <span class="project-tag">Aprendizado contínuo</span>
+                            <span class="project-tag">Gestão de tempo</span>
+                            <span class="project-tag">Adaptação</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 fade-in-right">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="capability-card cap-frontend">
+                                <div class="icon-wrap" style="color:#3b82f6"><i class="bi bi-code-slash"></i></div>
+                                <h4>Front-end</h4>
+                                <p>Interfaces modernas e responsivas</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="capability-card cap-backend">
+                                <div class="icon-wrap" style="color:#a855f7"><i class="bi bi-server"></i></div>
+                                <h4>Back-end</h4>
+                                <p>APIs robustas e escaláveis</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="capability-card cap-db">
+                                <div class="icon-wrap" style="color:#ec4899"><i class="bi bi-database"></i></div>
+                                <h4>Database</h4>
+                                <p>Modelagem e otimização</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="capability-card cap-full">
+                                <div class="icon-wrap" style="color:#22c55e"><i class="bi bi-globe2"></i></div>
+                                <h4>Full Stack</h4>
+                                <p>Soluções completas e integradas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section id="skills" class="section-main">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+                <p class="section-subtitle mt-2">Minhas Hard-Skills que domino</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Frontend -->
+                <div class="col-md-4 fade-in" style="transition-delay:0.1s">
+                    <div class="skill-panel">
+                        <h3>Front-end</h3>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="skill-item" data-level="95">
+                                <div class="d-flex justify-content-between mb-1"><span class="skill-label">HTML /
+                                        CSS</span><span class="skill-pct">95%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#f97316,#ef4444)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="88">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">JavaScript</span><span class="skill-pct">88%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#facc15,#ca8a04)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="78">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">Bootstrap</span><span class="skill-pct">78%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="70">
+                                <div class="d-flex justify-content-between mb-1"><span class="skill-label">Tailwind
+                                        CSS</span><span class="skill-pct">70%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#facc15,#ca8a04)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="43">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">React.js</span><span class="skill-pct">43%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#22d3ee,#3b82f6)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col-md-4 fade-in" style="transition-delay:0.2s">
+                    <div class="skill-panel">
+                        <h3>Back-end</h3>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="skill-item" data-level="85">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">Node.js</span><span class="skill-pct">85%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#22c55e,#10b981)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <div class="d-flex justify-content-between mb-1"><span class="skill-label">Java / Spring
+                                        Boot</span><span class="skill-pct">80%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#ef4444,#ea580c)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="75">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">PHP</span><span class="skill-pct">75%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#a855f7,#6366f1)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="70">
+                                <div class="d-flex justify-content-between mb-1"><span class="skill-label">APIs
+                                        REST</span><span class="skill-pct">70%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#3b82f6,#a855f7)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="col-md-4 fade-in" style="transition-delay:0.3s">
+                    <div class="skill-panel">
+                        <h3>Database & Ferramentas</h3>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="skill-item" data-level="88">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">PostgreSQL</span><span class="skill-pct">88%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#2563eb,#1e40af)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="85">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">MySQL</span><span class="skill-pct">85%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#60a5fa,#22d3ee)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="82">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">Git</span><span class="skill-pct">82%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#f97316,#dc2626)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="67">
+                                <div class="d-flex justify-content-between mb-1"><span
+                                        class="skill-label">Docker</span><span class="skill-pct">67%</span></div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="background:linear-gradient(90deg,#3b82f6,#06b6d4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra badges -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 fade-in">
+                <span class="badge-tag">TypeScript</span>
+                <span class="badge-tag">Next.js</span>
+                <span class="badge-tag">Express</span>
+                <span class="badge-tag">MongoDB</span>
+                <span class="badge-tag">CI/CD</span>
+                <span class="badge-tag">Microservices</span>
+                <!-- <span class="badge-tag"></span> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section id="projects" class="section-alt">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <h2 class="section-title">Meus <span class="accent">Projetos</span></h2>
+                <p class="section-subtitle mt-2">Alguns dos projetos que desenvolvi</p>
+            </div>
+            <!-- Projeto 01 -->
+            <div class="row g-4">
+                <div class="col-md-6 fade-in" style="transition-delay:0.1s">
+                    <div class="project-card">
+                        <div class="img-wrap">
+                            <img src="/img/helpdesk.png" alt="Sistema de Helpdesk" />
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Sistema de Helpdesk</h3>
+                            <p class="project-desc">Sistema completo de gerenciamento de tickets e atendimento ao
+                                cliente com dashboard administrativo, sistema de prioridades.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="project-tag">html</span>
+                                <span class="project-tag">css</span>
+                                <span class="project-tag">common.js</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://helpdesk-lovat-psi.vercel.app/" class="btn-proj"><i
+                                        class="bi bi-box-arrow-up-right"></i> Ver Projeto</a>
+                                <a href="https://github.com/felipe-0892/Helpdesk" target="_blank" class="btn-proj"><i
+                                        class="bi bi-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 02 -->
+                <div class="col-md-6 fade-in" style="transition-delay:0.2s">
+                    <div class="project-card">
+                        <div class="img-wrap">
+                            <img src="/img/reservaTransporte.png" alt="Sistema de OS" />
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Sistema de Ordem de Serviço para Transportes</h3>
+                            <p class="project-desc">Plataforma para gerenciamento de ordens de serviço com controle de
+                                status, histórico completo, geração de relatórios e logs para auditorias.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Bootstrap</span>
+                                <span class="project-tag">HTML / CSS</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://reserva-transporte.infinityfree.me/login.php" class="btn-proj"><i
+                                        class="bi bi-box-arrow-up-right"></i> Ver Projeto</a>
+                                <!-- adicionar o projeto do outro github -->
+                                <a href="#project-02" class="btn-proj"><i class="bi bi-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 03 -->
+                <div class="col-md-6 fade-in" style="transition-delay:0.3s">
+                    <div class="project-card">
+                        <div class="img-wrap">
+                            <img src="/img/biblio.png" alt="BiblioSYS" />
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">BiblioSYS</h3>
+                            <p class="project-desc">Sistema de gerenciamento de biblioteca com controle de acervo,
+                                empréstimos e devoluções.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="project-tag">Bootstrap</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#project-03" class="btn-proj"><i class="bi bi-box-arrow-up-right"></i> Ver Projeto</a>
+                                <a href="https://github.com/felipe-0892/Biblio_Sys_PHP" target="_blank" class="btn-proj"><i
+                                        class="bi bi-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 04 -->
+                <div class="col-md-6 fade-in" style="transition-delay:0.4s">
+                    <div class="project-card">
+                        <div class="img-wrap">
+                            <img src="/img/dblive.png" alt="Integração Google Sheets" />
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Integração entre banco de dados Relacional e Não Relacional</h3>
+                            <p class="project-desc">O DBLive é um sistema completo construído do zero para demonstrar
+                                como diferentes tecnologias de banco de dados coexistem e se comunicam numa arquitetura
+                                real de software.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#project-04" class="btn-proj"><i class="bi bi-box-arrow-up-right"></i> Ver Projeto</a>
+                                <a href="https://github.com/felipe-0892/DB_Live" target="_blank" class="btn-proj"><i
+                                        class="bi bi-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão Ver Mais -->
+                <div class="text-center mt-5 fade-in">
+                    <a href="https://github.com/felipe-0892" target="_blank" class="btn-gradient"
+                        style="text-decoration:none; padding: 14px 40px; display:inline-flex; align-items:center; gap:10px; font-size:1rem;">
+                        <i class="bi bi-github"></i> Ver mais no GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" class="section-main">
+        <div class="container">
+            <div class="text-center mb-5 fade-in" style="max-width:600px; margin-inline:auto">
+                <h2 class="section-title">Vamos construir algo <span class="accent">extraordinário?</span></h2>
+                <p class="section-subtitle mt-3">Estou sempre aberto a discutir novos projetos, parcerias criativas ou
+                    oportunidades inovadoras dentro de sua empresa.</p>
+            </div>
+
+            <div class="row g-4 mb-5 justify-content-center">
+                <div class="col-md-4 col-sm-6 fade-in" style="transition-delay:0.1s">
+                    <a href="mailto:felipesilvacosta892@gmail.com" class="contact-link">
+                        <div class="contact-icon email"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <h6>Email</h6>
+                            <p>felipesilvacosta892@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 fade-in" style="transition-delay:0.2s">
+                    <a href="https://wa.me/5579999107255" target="_blank" class="contact-link">
+                        <div class="contact-icon whats"><i class="bi bi-whatsapp"></i></div>
+                        <div>
+                            <h6>WhatsApp</h6>
+                            <p>+55 79 99910-7255</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-card mx-auto fade-in" style="max-width:760px">
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Nome</label>
+                        <input type="text" id="contactNome" class="form-control" placeholder="Seu nome completo" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" id="contactEmail" class="form-control"
+                            placeholder="seu.email@example.com" />
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Mensagem</label>
+                    <textarea id="contactMensagem" class="form-control" rows="6"
+                        placeholder="Conte-me sobre seu projeto ou ideia..."></textarea>
+                </div>
+                <button onclick="enviarWhatsApp()" class="btn-gradient w-100" style="font-size:1rem; padding:16px">
+                    <i class="bi bi-send me-2"></i>Enviar Mensagem
+                </button>
+            </div>
+
+            <!-- Toast -->
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+                <div id="toastSucesso" class="toast align-items-center border-0" role="alert" aria-live="assertive"
+                    aria-atomic="true"
+                    style="background: linear-gradient(135deg, #22c55e, #16a34a); color:#fff; border-radius:12px; min-width:320px;">
+                    <div class="d-flex">
+                        <div class="toast-body d-flex align-items-center gap-2"
+                            style="font-size:.95rem; font-weight:500;">
+                            <i class="bi bi-check-circle-fill fs-5"></i>
+                            Mensagem enviada com sucesso! Aguarde o meu retorno. 😊
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                            data-bs-dismiss="toast"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p>Felipe Silva Costa &copy; 2026 Todos os direitos reservados.</p>
+            <div class="d-flex gap-4">
+                <a href="https://github.com/felipe-0892" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/felipe-silva-costa/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/felipe_08920/" target="_blank">Instagram</a>
+                <a href="https://linktr.ee/FelipeSilva0892" target="_blank">Linktree</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAB WhatsApp -->
+    <a href="https://wa.me/5579999107255" target="_blank" class="fab-whatsapp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
